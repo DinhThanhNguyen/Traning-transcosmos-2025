@@ -10,9 +10,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="max-w-7xl mx-auto">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-4 mb-4">Phim phổ biến</h2>
-      <MovieGrid movies={movies} />
+    <main>
+      <div className="wrapper max-w-7xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-4 mb-4">Phim phổ biến</h2>
+        <MovieGrid movies={movies} />
+      </div>
     </main>
   );
 }
